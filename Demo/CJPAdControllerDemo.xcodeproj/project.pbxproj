@@ -18,6 +18,7 @@
 		838343791A8460D400098483 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838343781A8460D400098483 /* AnotherViewController.m */; };
 		8383437D1A84617100098483 /* CJPAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383437C1A84617100098483 /* CJPAdController.m */; };
 		839C13131BB09A1900E4F0F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839C13121BB09A1900E4F0F5 /* GoogleMobileAds.framework */; };
+		C6B4E55BE30D7FCC0C591B86 /* Pods_CJPAdControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F9C8E0A8BEAF2834415219 /* Pods_CJPAdControllerDemo.framework */; };
 		F5B5F8681D62146A0026E0FB /* CJPAdController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F5B5F8671D62146A0026E0FB /* CJPAdController.podspec */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,9 @@
 		8383437B1A84617100098483 /* CJPAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPAdController.h; sourceTree = "<group>"; };
 		8383437C1A84617100098483 /* CJPAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPAdController.m; sourceTree = "<group>"; };
 		839C13121BB09A1900E4F0F5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../../GoogleMobileAdsSdk/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		A9B12B5B3B89032FCC18CD64 /* Pods-CJPAdControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJPAdControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJPAdControllerDemo/Pods-CJPAdControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DD172750455A01C5237BC422 /* Pods-CJPAdControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJPAdControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJPAdControllerDemo/Pods-CJPAdControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E2F9C8E0A8BEAF2834415219 /* Pods_CJPAdControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJPAdControllerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B5F8671D62146A0026E0FB /* CJPAdController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CJPAdController.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				839C13131BB09A1900E4F0F5 /* GoogleMobileAds.framework in Frameworks */,
+				C6B4E55BE30D7FCC0C591B86 /* Pods_CJPAdControllerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244F542E5058E48F8C9998DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD172750455A01C5237BC422 /* Pods-CJPAdControllerDemo.debug.xcconfig */,
+				A9B12B5B3B89032FCC18CD64 /* Pods-CJPAdControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		838343451A845E1C00098483 = {
 			isa = PBXGroup;
 			children = (
 				838343501A845E1C00098483 /* CJPAdControllerDemo */,
 				8383436A1A845E1C00098483 /* CJPAdControllerDemoTests */,
 				8383434F1A845E1C00098483 /* Products */,
+				244F542E5058E48F8C9998DA /* Pods */,
+				97C2FF90CBC9AA21C16FF159 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +163,14 @@
 			path = CJPAdController;
 			sourceTree = "<group>";
 		};
+		97C2FF90CBC9AA21C16FF159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2F9C8E0A8BEAF2834415219 /* Pods_CJPAdControllerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838343711A845E1C00098483 /* Build configuration list for PBXNativeTarget "CJPAdControllerDemo" */;
 			buildPhases = (
+				01DEBF66150CC73645431D8C /* [CP] Check Pods Manifest.lock */,
 				8383434A1A845E1C00098483 /* Sources */,
 				8383434B1A845E1C00098483 /* Frameworks */,
 				8383434C1A845E1C00098483 /* Resources */,
+				FB5D80A5C943CB8E02E90497 /* [CP] Embed Pods Frameworks */,
+				2C04B887AE99975B0EE75EBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +270,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01DEBF66150CC73645431D8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C04B887AE99975B0EE75EBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJPAdControllerDemo/Pods-CJPAdControllerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB5D80A5C943CB8E02E90497 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJPAdControllerDemo/Pods-CJPAdControllerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8383434A1A845E1C00098483 /* Sources */ = {
@@ -384,6 +459,7 @@
 		};
 		838343721A845E1C00098483 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD172750455A01C5237BC422 /* Pods-CJPAdControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +477,7 @@
 		};
 		838343731A845E1C00098483 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B12B5B3B89032FCC18CD64 /* Pods-CJPAdControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
