@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		831B3EA21BB83B5D00C195CF /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831B3EA01BB83B5D00C195CF /* TabController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		831B3EA21BB83B5D00C195CF /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831B3EA01BB83B5D00C195CF /* TabController.storyboard */; };
 		838343541A845E1C00098483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838343531A845E1C00098483 /* main.m */; };
 		838343571A845E1C00098483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 838343561A845E1C00098483 /* AppDelegate.m */; };
 		8383435A1A845E1C00098483 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838343591A845E1C00098483 /* RootViewController.m */; };
@@ -17,7 +17,8 @@
 		8383436E1A845E1C00098483 /* CJPAdControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383436D1A845E1C00098483 /* CJPAdControllerDemoTests.m */; };
 		838343791A8460D400098483 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838343781A8460D400098483 /* AnotherViewController.m */; };
 		8383437D1A84617100098483 /* CJPAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383437C1A84617100098483 /* CJPAdController.m */; };
-		839C13131BB09A1900E4F0F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839C13121BB09A1900E4F0F5 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
+		839C13131BB09A1900E4F0F5 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839C13121BB09A1900E4F0F5 /* GoogleMobileAds.framework */; };
+		F5B5F8681D62146A0026E0FB /* CJPAdController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F5B5F8671D62146A0026E0FB /* CJPAdController.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8383437B1A84617100098483 /* CJPAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPAdController.h; sourceTree = "<group>"; };
 		8383437C1A84617100098483 /* CJPAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPAdController.m; sourceTree = "<group>"; };
 		839C13121BB09A1900E4F0F5 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../../GoogleMobileAdsSdk/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		F5B5F8671D62146A0026E0FB /* CJPAdController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CJPAdController.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		838343501A845E1C00098483 /* CJPAdControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F5B5F8671D62146A0026E0FB /* CJPAdController.podspec */,
 				838343551A845E1C00098483 /* AppDelegate.h */,
 				838343561A845E1C00098483 /* AppDelegate.m */,
 				838343581A845E1C00098483 /* RootViewController.h */,
@@ -228,6 +231,7 @@
 				838343621A845E1C00098483 /* LaunchScreen.xib in Resources */,
 				831B3EA21BB83B5D00C195CF /* TabController.storyboard in Resources */,
 				8383435F1A845E1C00098483 /* Images.xcassets in Resources */,
+				F5B5F8681D62146A0026E0FB /* CJPAdController.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
